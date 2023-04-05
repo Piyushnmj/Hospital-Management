@@ -46,6 +46,10 @@ input::placeholder{
     font-weight: bold;
 }
 
+input:focus-within{
+    box-shadow: 2px 2px 2px 2px rgb(243, 243, 243);
+}
+
 .toggle-switch{
     margin-top: 20px;
     font-size: 13px;

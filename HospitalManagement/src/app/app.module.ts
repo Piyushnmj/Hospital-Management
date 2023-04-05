@@ -8,19 +8,23 @@ import { LoginFormComponent } from './Components/login-form/login-form.component
 import { AddAppointmentComponent } from './Components/add-appointment/add-appointment.component';
 import {MatCardModule} from '@angular/material/card';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
+import { DashboardComponent } from './Components/dashboard/dashboard.component';
+import {MatMenuModule} from '@angular/material/menu';
 
 @NgModule({
   declarations: [
     AppComponent,
     SignUpComponent,
     LoginFormComponent,
-    AddAppointmentComponent
+    AddAppointmentComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatCardModule,
-    MatSlideToggleModule
+    MatSlideToggleModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
