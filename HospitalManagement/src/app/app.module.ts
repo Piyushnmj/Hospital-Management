@@ -10,6 +10,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import {MatMenuModule} from '@angular/material/menu';
+import { DoctorsDashboardComponent } from './Components/doctors-dashboard/doctors-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {MatMenuModule} from '@angular/material/menu';
     SignUpComponent,
     LoginFormComponent,
     AddAppointmentComponent,
-    DashboardComponent
+    DashboardComponent,
+    DoctorsDashboardComponent
   ],
   imports: [
     BrowserModule,
