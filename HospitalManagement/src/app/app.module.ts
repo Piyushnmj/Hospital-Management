@@ -11,6 +11,9 @@ import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import { DashboardComponent } from './Components/dashboard/dashboard.component';
 import {MatMenuModule} from '@angular/material/menu';
 import { DoctorsDashboardComponent } from './Components/doctors-dashboard/doctors-dashboard.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {MatInputModule} from '@angular/material/input';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,7 +29,11 @@ import { DoctorsDashboardComponent } from './Components/doctors-dashboard/doctor
     AppRoutingModule,
     MatCardModule,
     MatSlideToggleModule,
-    MatMenuModule
+    MatMenuModule,
+    ReactiveFormsModule,
+    FormsModule,
+    MatInputModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

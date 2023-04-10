@@ -7,11 +7,12 @@
             <div class="sub-header">
                 Create your Account
             </div>
-            <form>
-                <input type="text" placeholder="Name">
-                <input type="text" placeholder="Email address">
-                <input type="text" placeholder="Password">
-                <mat-slide-toggle color="primary" class="toggle-switch">I agree to the Terms and Privacy</mat-slide-toggle>
+            <form [formGroup]="signupForm" (ngSubmit)="signup()">
+                <input matInput type="text" placeholder="Name" formControlName="name">
+                <input type="text" placeholder="Email address" formControlName="email">
+                <input type="text" placeholder="Password" formControlName="password">
+                <mat-slide-toggle color="primary" class="toggle-switch">I agree to the Terms and
+                    Privacy</mat-slide-toggle>
                 <div class="registerbtn">
                     <button>
                         <img src="../../../assets/add.svg">
