@@ -7,9 +7,9 @@
             <div class="sub-header">
                 Login to access your Account
             </div>
-            <form>
-                <input type="text" placeholder="Login">
-                <input type="text" placeholder="Password">
+            <form [formGroup]="loginForm" (ngSubmit)="login()">
+                <input type="text" placeholder="Login" formControlName="login">
+                <input type="password" placeholder="Password" formControlName="password">
                 <mat-slide-toggle color="primary" class="toggle-switch">Remember me</mat-slide-toggle>
                 <div class="loginbtn">
                     <button>

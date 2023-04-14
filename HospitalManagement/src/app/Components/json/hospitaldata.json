@@ -11,6 +11,68 @@
       "email": "ahsfhaskf",
       "password": "jansfjkajksf",
       "id": 2
+    },
+    {
+      "name": "Praveen",
+      "email": "piyush@gmail.com",
+      "password": "piyush123",
+      "id": 3
+    },
+    {
+      "name": "piyush",
+      "email": "piyush@gmail.in",
+      "password": "piyush123",
+      "id": 4
+    },
+    {
+      "name": "arunashish",
+      "email": "arun.ashish@gmail.com",
+      "password": "ashish123",
+      "id": 5
+    },
+    {
+      "name": "Saurabh Rajankar",
+      "email": "saurabh@gmail.com",
+      "password": "saurabh123",
+      "id": 6
+    }
+  ],
+  "doctors": [
+    {
+      "doctorimage": "../../../assets/aaron-keener.jpg",
+      "name": "Dr. Aaron Keener",
+      "profession": "Surgeon",
+      "id": 1
+    },
+    {
+      "doctorimage": "../../../assets/austin-distel.jpg",
+      "name": "Dr. Austin Distel",
+      "profession": "Dentist",
+      "id": 2
+    },
+    {
+      "doctorimage": "../../../assets/lisa-chavez.jpg",
+      "name": "Dr. Lisa Chavez",
+      "profession": "Gynaecologist",
+      "id": 3
+    },
+    {
+      "doctorimage": "../../../assets/usman-yousaf.jpg",
+      "name": "Dr. Usman Yousaf",
+      "profession": "Cardiologist",
+      "id": 4
+    },
+    {
+      "doctorimage": "../../../assets/kevin-hart.jpg",
+      "name": "Dr. Kevin Hart",
+      "profession": "Pathologist",
+      "id": 5
+    },
+    {
+      "doctorimage": "../../../assets/santosh-daruwala.jpg",
+      "name": "Dr. Santosh Daruwala",
+      "profession": "General practitioner",
+      "id": 6
     }
   ]
 }

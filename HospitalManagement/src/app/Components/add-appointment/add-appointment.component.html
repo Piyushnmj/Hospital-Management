@@ -1,6 +1,6 @@
 <div class="maincontainer">
-    <mat-card>
-        <mat-card-content class="content">
+    <!-- <mat-card> -->
+        <div class="content">
             <div class="header">
                 Add appointment
             </div>
@@ -23,7 +23,7 @@
                 <input type="text" placeholder="Number">
                 <input type="text" placeholder="Injury">
                 <div class="btn">
-                    <button class="cancel-btn" routerLink="/doctors">
+                    <button class="cancel-btn" (click)="cancel()">
                         Cancel
                     </button>
                     <button class="add-btn">
@@ -31,6 +31,6 @@
                     </button>
                 </div>
             </form>
-        </mat-card-content>
-    </mat-card>
+        </div>
+    <!-- </mat-card> -->
 </div>

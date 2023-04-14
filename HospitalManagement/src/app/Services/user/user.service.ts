@@ -9,12 +9,15 @@ export class UserService {
   url = 'http://localhost:3000/';
   constructor(private httpService: HttpService) { }
 
-  Signup(result:any){
-    let header = {
-      headers: new HttpHeaders({
-        'Content-Type': 'application/json'
-      })
-    }
-    return this.httpService.PostService(this.url+'users', result, false, header)
+  Signup(result: any) {
+    return this.httpService.PostService(this.url + 'users', result)
+  }
+
+  Login() {
+    return this.httpService.GetService(this.url + 'users')
+  }
+
+  doctorList(){
+    return this.httpService.GetService(this.url + 'doctors')
   }
 }

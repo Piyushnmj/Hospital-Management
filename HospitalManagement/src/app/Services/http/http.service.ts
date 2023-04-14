@@ -6,22 +6,22 @@ import { Injectable } from '@angular/core';
 })
 export class HttpService {
 
-  constructor(private httpClient:HttpClient) { }
+  constructor(private httpClient: HttpClient) { }
 
-  PostService(url:string, data:any, token:boolean=false, httpOptions:any={}){
-      return this.httpClient.post(url, data , token && httpOptions)
+  PostService(url: string, data: any) {
+    return this.httpClient.post(url, data)
   }
 
-  PutService(url:string, data:any, httpOptions:any={}){
-    return this.httpClient.put(url, data && httpOptions)
+  PutService(url: string, data: any) {
+    return this.httpClient.put(url, data)
   }
 
-  GetService(url:string, data:any, httpOptions:any={}){
-    return this.httpClient.get(url, data && httpOptions)
+  GetService(url: string) {
+    return this.httpClient.get(url)
   }
 
-  DeleteService(url:string, data:any, httpOptions:any={}){
-    return this.httpClient.delete(url, data && httpOptions)
+  DeleteService(url: string, data: any) {
+    return this.httpClient.delete(url, data)
   }
 
 }
