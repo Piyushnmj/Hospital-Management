@@ -17,6 +17,11 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import { AppointmentsComponent } from './Components/appointments/appointments.component';
+import { PatientsComponent } from './Components/patients/patients.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +30,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     LoginFormComponent,
     AddAppointmentComponent,
     DashboardComponent,
-    DoctorsDashboardComponent
+    DoctorsDashboardComponent,
+    AppointmentsComponent,
+    PatientsComponent
   ],
   imports: [
     BrowserModule,
@@ -40,7 +47,10 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     HttpClientModule,
     MatSnackBarModule,
     MatDialogModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]

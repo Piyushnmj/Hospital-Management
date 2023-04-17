@@ -41,7 +41,7 @@ export class LoginFormComponent implements OnInit {
             this.availableData = data;
             dataCheck = true;
             localStorage.setItem('id', data.id);
-            this.router.navigate(['dashboard']);
+            this.router.navigate(['home']);
             
             this.snackBar.open('Login Successfull...', 'Dismiss', {
               duration: 3000,

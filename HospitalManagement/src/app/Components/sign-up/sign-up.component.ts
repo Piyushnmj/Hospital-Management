@@ -29,7 +29,7 @@ export class SignUpComponent implements OnInit {
     }
     this.userService.Signup(this.result).subscribe((response:any)=>{
       console.log(response);
-      this.router.navigate(["login"])
+      this.router.navigate(["login"]);
     })
   }
 }

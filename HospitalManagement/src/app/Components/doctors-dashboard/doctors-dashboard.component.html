@@ -1,22 +1,24 @@
-<div class="header">Doctors</div>
-<div class="maincontainer" >
-    <mat-card class="card" *ngFor="let doctors of doctorsDetails">
-        <mat-card-content class="content">
-            <img class="doctorimage" src="{{doctors.doctorimage}}" alt="doctor1">
-            <label class="name">{{doctors.name}}</label>
-            <label class="profession">{{doctors.profession}}</label>
-            <div class="socialmedia-icons">
-                <img src="../../../assets/instagram.png" alt="instagram">
-                <img src="../../../assets/facebook.png" alt="facebook">
-                <img src="../../../assets/twitter.png" alt="twitter">
-            </div>
-            <div class="address">
-                <span>Falcon Ave, Suite 600 San Fransisco, CADGE</span>
-                <span>94107</span>
-            </div>
-            <button class="btn" (click)="addAppointment()">
-                Add appointment
-            </button>
-        </mat-card-content>
-    </mat-card>
+<div class="container">
+    <div class="header">Doctors</div>
+    <div class="maincontainer">
+        <mat-card class="card" *ngFor="let doctors of doctorsDetails">
+            <mat-card-content class="content">
+                <img class="doctorimage" src="{{doctors.doctorimage}}" alt="doctor1">
+                <label class="name">{{doctors.name}}</label>
+                <label class="profession">{{doctors.profession}}</label>
+                <div class="socialmedia-icons">
+                    <img src="../../../assets/instagram.png" alt="instagram">
+                    <img src="../../../assets/facebook.png" alt="facebook">
+                    <img src="../../../assets/twitter.png" alt="twitter">
+                </div>
+                <div class="address">
+                    <span>Falcon Ave, Suite 600 San Fransisco, CADGE</span>
+                    <span>94107</span>
+                </div>
+                <button class="btn" (click)="addAppointment()">
+                    Add appointment
+                </button>
+            </mat-card-content>
+        </mat-card>
+    </div>
 </div>
