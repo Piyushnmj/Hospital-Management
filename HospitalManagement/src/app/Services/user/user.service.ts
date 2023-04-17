@@ -20,4 +20,12 @@ export class UserService {
   doctorList(){
     return this.httpService.GetService(this.url + 'doctors')
   }
+
+  AddAppointment(result: any){
+    return this.httpService.PostService(this.url + 'appointments', result)
+  }
+
+  GetUserDetails(id:any){
+    return this.httpService.GetService(this.url + 'users/' + id)
+  }
 }

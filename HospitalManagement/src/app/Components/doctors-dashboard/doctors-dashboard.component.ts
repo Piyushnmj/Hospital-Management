@@ -20,8 +20,10 @@ export class DoctorsDashboardComponent implements OnInit {
     })
   }
 
-  addAppointment(){
-    let dialogBox = this.dialog.open(AddAppointmentComponent)
+  addAppointment(content: any){
+    let dialogBox = this.dialog.open(AddAppointmentComponent, {
+      data: content
+    })
   }
 
 }

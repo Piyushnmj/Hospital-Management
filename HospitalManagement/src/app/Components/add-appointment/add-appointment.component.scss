@@ -77,7 +77,7 @@ input:focus-within{
     margin-top: 20px;
     display: flex;
     flex-direction: row;
-    gap: 50%;
+    justify-content: space-between;
 }
 
 .cancel-btn{
@@ -86,7 +86,7 @@ input:focus-within{
 }
 
 .add-btn{
-    width: 150px;
+    width: 90px;
     background-color: #5C89FC;
 }
 
