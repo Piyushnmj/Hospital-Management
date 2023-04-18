@@ -76,6 +76,38 @@
     }
   ],
   "appointments": [
-    
+    {
+      "name": "piyush",
+      "doctorname": "Dr. Austin Distel",
+      "email": "piyush@gmail.in",
+      "date": "2023-03-29",
+      "startTime": "10:55",
+      "endTime": "17:57",
+      "number": "9876543211",
+      "injury": "accident",
+      "id": 1
+    },
+    {
+      "name": "iyush",
+      "doctorname": "Dr. Austin Distel",
+      "email": "iyush@gmail.in",
+      "date": "2023-03-29",
+      "startTime": "10:55",
+      "endTime": "17:57",
+      "number": "9876543211",
+      "injury": "accident",
+      "id": 1
+    },
+    {
+      "name": "yush",
+      "doctorname": "Dr. Austin Distel",
+      "email": "yush@gmail.in",
+      "date": "2023-03-29",
+      "startTime": "10:55",
+      "endTime": "17:57",
+      "number": "9876543211",
+      "injury": "accident",
+      "id": 1
+    }
   ]
 }

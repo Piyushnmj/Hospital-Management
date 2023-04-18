@@ -22,6 +22,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatListModule} from '@angular/material/list';
 import { AppointmentsComponent } from './Components/appointments/appointments.component';
 import { PatientsComponent } from './Components/patients/patients.component';
+import {MatSortModule} from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -50,7 +51,8 @@ import { PatientsComponent } from './Components/patients/patients.component';
     MatToolbarModule,
     MatIconModule,
     MatSidenavModule,
-    MatListModule
+    MatListModule,
+    MatSortModule
   ],
   providers: [],
   bootstrap: [AppComponent]

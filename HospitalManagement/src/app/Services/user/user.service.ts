@@ -28,4 +28,8 @@ export class UserService {
   GetUserDetails(id:any){
     return this.httpService.GetService(this.url + 'users/' + id)
   }
+
+  GetAppointmentList(){
+    return this.httpService.GetService(this.url + 'appointments')
+  }
 }

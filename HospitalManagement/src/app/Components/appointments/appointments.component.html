@@ -1,1 +1,29 @@
-<p>appointments works!</p>
+<div class="main-container">
+    <div class="header">Appointments</div>
+    <div class="table-container">
+        <table matSort (matSortChange)="sortData($event)">
+            <tr class="col-header">
+                <th class="photo">Photo</th>
+                <th mat-sort-header="name" class="name">Name</th>
+                <th mat-sort-header="email" class="email">Email</th>
+                <th class="date">Date</th>
+                <th class="time">Visit time</th>
+                <th class="number">Number</th>
+                <th class="doctor">Doctor</th>
+                <th class="injury">Injury/Condition</th>
+                <th class="actions-btn">Actions</th>
+            </tr>
+            <tr class="table-content" *ngFor="let appointment of appointmentList">
+                <td class="photo"><img src="../../../assets/profile.png"></td>
+                <td class="name">{{appointment.name}}</td>
+                <td class="email">{{appointment.email}}</td>
+                <td class="date">{{appointment.date}}</td>
+                <td class="time">{{appointment.startTime}} - {{appointment.endTime}}</td>
+                <td class="number">{{appointment.number}}</td>
+                <td class="doctor">{{appointment.doctorname}}</td>
+                <td class="injury">{{appointment.injury}}</td>
+                <td class="actions-btn"></td>
+            </tr>
+        </table>
+    </div>
+</div>
