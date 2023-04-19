@@ -1,13 +1,20 @@
-.container{
+.headercontainer{
+    width: 100%;
     display: flex;
+    align-items: center;
     justify-content: center;
-    flex-direction: column;
 }
 
 .header{
+    width: 1250px;
     font-size: xx-large;
     color: #98A3AE;
     padding-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.container{
     display: flex;
     justify-content: center;
 }
@@ -87,4 +94,25 @@
     box-shadow: 0px 2px 15px 3px rgb(215, 205, 205);
     font-size: 15px;
     font-weight: 500;
+}
+
+@media screen and (max-width: 1247px) {
+
+    .header{
+        width: 830px;
+    }
+}
+
+@media screen and (max-width: 821px) {
+
+    .header{
+        width: 400px;
+    }
+}
+
+@media screen and (max-width: 390px) {
+
+    .header{
+        width: 100%;
+    }
 }
