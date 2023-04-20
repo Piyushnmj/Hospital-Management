@@ -9,26 +9,27 @@ import { UserService } from 'src/app/Services/user/user.service';
 })
 
 export class AppointmentsComponent implements OnInit {
-  appointmentList: any;
+  displayedColumns: string[] = ['photo', 'name', 'email', 'date', 'time', 'number', 'doctor', 'injury', 'actions'];
+  dataSource: any;
   constructor(private userService: UserService) { }
 
   ngOnInit(): void {
     this.userService.GetAppointmentList().subscribe((response: any) => {
       console.log(response);
-      this.appointmentList = response;
+      this.dataSource = response;
     })
   }
 
   sortData(sort: Sort) {
-    const data = this.appointmentList.slice();
+    const data = this.dataSource.slice();
     if (!sort.active || sort.direction === '') {
-      this.appointmentList = data;
+      this.dataSource = data;
       return;
     }
 
-    this.appointmentList = data.sort((a: any, b:any) => {
+    this.dataSource = data.sort((a: any, b: any) => {
       console.log(a, b)
-    
+
       const isAsc = sort.direction === 'asc';
       switch (sort.active) {
         case 'name':

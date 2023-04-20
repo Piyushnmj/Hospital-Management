@@ -8,10 +8,11 @@
 
 .content{
     width: 470px;
-    height: 570px;
+    height: 650px;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .header{
@@ -20,7 +21,7 @@
 }
 
 .user-profile-pic{
-    margin-top: 20px;
+    margin-top: 15px;
     display: flex;
     flex-direction: row;
     gap: 20px;
@@ -43,7 +44,7 @@
 }
 
 input{
-    margin-top: 20px;
+    margin-top: 18px;
     height: 38px;
     width: 90%;
     outline: none;
@@ -91,7 +92,7 @@ input:focus-within{
 }
 
 button{
-    width: 120px;
+    width: 130px;
     height: 40px;
     border: none;
     border-radius: 5px;
@@ -102,6 +103,11 @@ button{
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+
+.pic{
+    width: 130px;
+    height: 50px;
 }
 
 @media screen and (max-width: 600px) {

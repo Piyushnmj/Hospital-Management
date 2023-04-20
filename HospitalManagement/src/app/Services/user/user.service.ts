@@ -17,10 +17,6 @@ export class UserService {
     return this.httpService.GetService(this.url + 'users')
   }
 
-  doctorList(){
-    return this.httpService.GetService(this.url + 'doctors')
-  }
-
   AddAppointment(result: any){
     return this.httpService.PostService(this.url + 'appointments', result)
   }

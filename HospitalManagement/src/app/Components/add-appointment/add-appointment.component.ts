@@ -26,6 +26,8 @@ export class AddAppointmentComponent implements OnInit {
       startTime: new FormControl('', Validators.required),
       endTime: new FormControl('', Validators.required),
       number: new FormControl('', Validators.required),
+      age: new FormControl('', Validators.required),
+      address: new FormControl('', Validators.required),
       injury: new FormControl('', Validators.required)
     })
 
@@ -56,6 +58,8 @@ export class AddAppointmentComponent implements OnInit {
       startTime: this.appointmentForm.value.startTime,
       endTime: this.appointmentForm.value.endTime,
       number: this.appointmentForm.value.number,
+      age: this.appointmentForm.value.age,
+      address: this.appointmentForm.value.address,
       injury: this.appointmentForm.value.injury
     }
     this.userService.AddAppointment(result).subscribe((response: any) => {

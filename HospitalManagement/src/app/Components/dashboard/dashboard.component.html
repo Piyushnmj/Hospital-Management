@@ -1,33 +1,34 @@
 <div class="container" [class.example-is-mobile]="mobileQuery.matches">
-    <mat-toolbar class="toolbar">
-      <button mat-icon-button (click)="snav.toggle()"><img src="../../../assets/menu.png" alt="menu"></button>
-      <div class="searchbar">
-        <input type="text" placeholder="Type to search">
-        <img src="../../../assets/search.png" alt="search">
+  <mat-toolbar class="toolbar">
+    <button mat-icon-button (click)="snav.toggle()"><img src="../../../assets/menu.png" alt="menu"></button>
+    <div class="searchbar">
+      <input type="text" placeholder="Type to search">
+      <img src="../../../assets/search.png" alt="search">
     </div>
     <div class="right-btns">
-        <button>
-            <img src="../../../assets/bell.png" alt="notification">
-        </button>
-        <button class="profilepic">
-            <img src="../../../assets/profile.png" alt="profile">
-        </button>
+      <button>
+        <img src="../../../assets/bell.png" alt="notification">
+      </button>
+      <button class="profilepic" mat-button [matMenuTriggerFor]="menu">
+        <img src="../../../assets/profile.png" alt="profile"></button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item (click)="logout()">Logout</button>
+      </mat-menu>
     </div>
-    </mat-toolbar>
-  
-    <mat-sidenav-container class="sidenav-container"
-                           [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
-      <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
-                   [fixedInViewport]="mobileQuery.matches" fixedTopGap="56">
-        <mat-nav-list>
-          <a mat-list-item routerLink="doctors">Doctors</a>
-          <a mat-list-item routerLink="appointments">Appointments</a>
-          <a mat-list-item routerLink="patients">Patients</a>
-        </mat-nav-list>
-      </mat-sidenav>
-  
-      <mat-sidenav-content>
-        <router-outlet></router-outlet>
-      </mat-sidenav-content>
-    </mat-sidenav-container>
-  </div>
+  </mat-toolbar>
+
+  <mat-sidenav-container class="sidenav-container" [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+    <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'" [fixedInViewport]="mobileQuery.matches"
+      fixedTopGap="56">
+      <mat-nav-list>
+        <a mat-list-item routerLink="doctors">Doctors</a>
+        <a mat-list-item routerLink="appointments">Appointments</a>
+        <a mat-list-item routerLink="patients">Patients</a>
+      </mat-nav-list>
+    </mat-sidenav>
+
+    <mat-sidenav-content>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>

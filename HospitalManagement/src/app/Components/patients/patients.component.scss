@@ -1,0 +1,77 @@
+.headercontainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    width: 88%;
+    font-size: xx-large;
+    color: #98A3AE;
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.table-container{
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+table{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photo, .name, .id, .age{
+    width: 100px;
+}
+
+.address{
+    width: 350px;
+}
+
+.number, .visit, .status, .actions{
+    width: 150px;
+}
+
+img{
+    width: 30px;
+}
+
+th{
+    background-color: #336CFB;
+    font-size: larger;
+    color: #ffffff;
+}
+
+td{
+    background-color: #F8F8F8;
+}
+
+.actions-btn{
+    width: 100px;
+    display: flex;
+    flex-direction: row;
+}
+
+.actions-btn>button{
+    outline: none;
+    border: none;
+    background-color: #F8F8F8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

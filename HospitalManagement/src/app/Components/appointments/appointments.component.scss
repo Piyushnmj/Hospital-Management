@@ -1,21 +1,27 @@
-.main-container{
+.headercontainer{
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header{
+    width: 88%;
+    font-size: xx-large;
+    color: #98A3AE;
+    padding-top: 30px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main-container{
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.header{
-    font-size: xx-large;
-    color: #98A3AE;
-    padding-top: 30px;
-    display: flex;
-    justify-content: center;
-}
-
 .table-container{
-    //width: 100%;
     padding-top: 30px;
     padding-bottom: 30px;
     display: flex;
@@ -23,32 +29,21 @@
 }
 
 table{
-    width: 90%;
+    width: 100%;
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
-.col-header{
-    width: 100%;
-    background-color: #E8E8E8;
-    display: flex;
-    align-items: center;
-    text-align: left;
-    padding-left: 20px;
-    padding-right: 20px;
-    height: 40px;
-}
-
-.photo{
+.photo, .actions{
     width: 100px;
 }
 
-.name, .date, .time, .doctor{
+.name, .date, .time, .number, .doctor{
     width: 150px;
 }
 
-.email, .number, .injury{
+.email, .injury{
     width: 180px;
 }
 
@@ -56,17 +51,13 @@ img{
     width: 30px;
 }
 
-.table-content{
-    margin-top: 2px;
-    width: 100%;
-    height: 50px;
-    padding-left: 20px;
-    padding-right: 20px;
+th{
+    background-color: #E8E8E8;
+    font-size: larger;
+}
+
+td{
     background-color: #F8F8F8;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    text-align: left;
 }
 
 .actions-btn{

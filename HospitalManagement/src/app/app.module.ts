@@ -24,6 +24,7 @@ import { AppointmentsComponent } from './Components/appointments/appointments.co
 import { PatientsComponent } from './Components/patients/patients.component';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
+import { AuthguardService } from './Services/authguard/authguard.service';
 
 @NgModule({
   declarations: [
@@ -56,7 +57,7 @@ import { MatTableModule } from '@angular/material/table';
     MatSortModule,
     MatTableModule
   ],
-  providers: [],
+  providers: [AuthguardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
 import { AddAppointmentComponent } from '../add-appointment/add-appointment.component';
-import { UserService } from 'src/app/Services/user/user.service';
+import { DoctorService } from 'src/app/Services/doctor/doctor.service';
 
 @Component({
   selector: 'app-doctors-dashboard',
@@ -10,10 +10,10 @@ import { UserService } from 'src/app/Services/user/user.service';
 })
 export class DoctorsDashboardComponent implements OnInit {
   doctorsDetails: any;
-  constructor(private dialog : MatDialog, private userService : UserService) { }
+  constructor(private dialog : MatDialog, private doctorService : DoctorService) { }
 
   ngOnInit(): void {
-    this.userService.doctorList().subscribe((response:any)=>{
+    this.doctorService.doctorList().subscribe((response:any)=>{
       console.log(response);
       
       this.doctorsDetails = response
