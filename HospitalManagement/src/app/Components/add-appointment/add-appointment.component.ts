@@ -12,11 +12,12 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 })
 export class AddAppointmentComponent implements OnInit {
   appointmentForm!: FormGroup
-  doctorname: any;
-  id:any
+  doctorname: string='';
+  id:any;
   patient:any;
-  name: any;
-  email: any;
+  name: string='';
+  email: string='';
+  profilepic: string='../../../assets/profile.png';
 
   constructor(private dialog: MatDialogRef<DoctorsDashboardComponent>, private formBuilder: FormBuilder,
     private userService: UserService, private snackbar: MatSnackBar, @Inject(MAT_DIALOG_DATA) public data: any) {
@@ -49,8 +50,13 @@ export class AddAppointmentComponent implements OnInit {
     this.dialog.close();
   }
 
+  changeImage(picInfo:string){
+    this.profilepic = picInfo;
+  }
+
   submit() {
     let result = {
+      image: this.profilepic,
       name: this.patient.name,
       doctorname: this.doctorname,
       email: this.patient.email,

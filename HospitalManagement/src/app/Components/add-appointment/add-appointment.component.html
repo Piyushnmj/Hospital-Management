@@ -4,16 +4,36 @@
             Add appointment
         </div>
         <div class="user-profile-pic">
-            <img src="../../../assets/profile.png" alt="profile">
+            <img src="{{profilepic}}" alt="profile" formControlName="image">
             <button mat-button [matMenuTriggerFor]="menu">
                 Select image
                 <img src="../../../assets/user.png" alt="icon">
             </button>
             <mat-menu #menu="matMenu">
-                <button mat-menu-item class="pic"><img src="../../../assets/Profile-Pic-1.png" alt="pic1"></button>
-                <button mat-menu-item class="pic"><img src="../../../assets/Profile-Pic-2.png" alt="pic2"></button>
-                <button mat-menu-item class="pic"><img src="../../../assets/Profile-Pic-3.png" alt="pic3"></button>
-                <button mat-menu-item class="pic"><img src="../../../assets/Profile-Pic-4.png" alt="pic4"></button>
+                <button mat-menu-item class="pic" (click)="changeImage(pic1.src)">
+                    <img #pic1 src="../../../assets/Profile-Pic-1.png" alt="pic1">
+                </button>
+                <button mat-menu-item class="pic" (click)="changeImage(pic2.src)">
+                    <img #pic2 src="../../../assets/Profile-Pic-2.png" alt="pic2">
+                </button>
+                <button mat-menu-item class="pic" (click)="changeImage(pic3.src)">
+                    <img #pic3 src="../../../assets/Profile-Pic-3.png" alt="pic3">
+                </button>
+                <button mat-menu-item class="pic" (click)="changeImage(pic4.src)">
+                    <img #pic4 src="../../../assets/Profile-Pic-4.png" alt="pic4">
+                </button>
+                <button mat-menu-item class="pic" (click)="changeImage(pic5.src)">
+                    <img #pic5 src="../../../assets/Profile-Pic-5.png" alt="pic4">
+                </button>
+                <button mat-menu-item class="pic" (click)="changeImage(pic6.src)">
+                    <img #pic6 src="../../../assets/Profile-Pic-6.png" alt="pic4">
+                </button>
+                <button mat-menu-item class="pic" (click)="changeImage(pic7.src)">
+                    <img #pic7 src="../../../assets/Profile-Pic-7.png" alt="pic4">
+                </button>
+                <button mat-menu-item class="pic" (click)="changeImage(pic8.src)">
+                    <img #pic8 src="../../../assets/Profile-Pic-8.png" alt="pic4">
+                </button>
             </mat-menu>
         </div>
         <form [formGroup]="appointmentForm">
