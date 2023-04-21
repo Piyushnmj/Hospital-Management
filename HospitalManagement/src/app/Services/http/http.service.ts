@@ -20,8 +20,7 @@ export class HttpService {
     return this.httpClient.get(url)
   }
 
-  DeleteService(url: string, data: any) {
-    return this.httpClient.delete(url, data)
+  DeleteService(url: string) {
+    return this.httpClient.delete(url)
   }
-
 }

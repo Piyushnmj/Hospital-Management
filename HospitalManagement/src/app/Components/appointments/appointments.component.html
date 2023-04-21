@@ -50,7 +50,7 @@
                 <td mat-cell *matCellDef="let element">
                     <div class="actions-btn">
                         <button><img src="../../../assets/edit.png" alt="edit" class="edit"></button>
-                        <button><img src="../../../assets/bin.png" alt="delete"></button>
+                        <button><img src="../../../assets/bin.png" alt="delete" (click)="delete(element.id)"></button>
                     </div>
                 </td>
             </ng-container>

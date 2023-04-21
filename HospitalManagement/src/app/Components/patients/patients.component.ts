@@ -15,7 +15,7 @@ export class PatientsComponent implements OnInit {
   constructor(private userService: UserService) { }
 
   ngOnInit(): void {
-    this.userService.GetAppointmentList().subscribe((response: any) => {
+    this.userService.GetPatientList().subscribe((response: any) => {
       console.log(response);
       this.dataSource = response;
     })

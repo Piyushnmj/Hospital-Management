@@ -77,60 +77,34 @@
   ],
   "appointments": [
     {
-      "image": "http://localhost:4200/assets/Profile-Pic-4.png",
+      "image": "../../../assets/profile.png",
       "name": "piyush",
       "doctorname": "Dr. Austin Distel",
       "email": "piyush@gmail.in",
-      "date": "2023-03-29",
-      "startTime": "10:00",
-      "endTime": "12:00",
-      "number": "9876543211",
-      "age": "12",
-      "address": "71 Pilgrim Avenue, Chandni Chowk, CA 20815",
-      "injury": "tooth pain",
-      "id": 1
-    },
-    {
-      "image": "http://localhost:4200/assets/Profile-Pic-2.png",
-      "name": "iyush",
-      "doctorname": "Dr. Usman Yousaf",
-      "email": "iyush@gmail.in",
-      "date": "2023-03-29",
-      "startTime": "14:00",
-      "endTime": "16:00",
-      "number": "9876543211",
-      "age": "65",
-      "address": "42 Pilgrim Avenue, Chandni Chowk, CA 20815",
-      "injury": "heart attack",
-      "id": 1
-    },
-    {
-      "image": "http://localhost:4200/assets/Profile-Pic-1.png",
-      "name": "yush",
-      "doctorname": "Dr. Aaron Keener",
-      "email": "yush@gmail.in",
-      "date": "2023-03-29",
-      "startTime": "12:00",
-      "endTime": "14:00",
-      "number": "9876543211",
-      "age": "30",
-      "address": "56 Pilgrim Avenue, Chandni Chowk, CA 20815",
+      "date": "2023-04-20",
+      "startTime": "19:00",
+      "endTime": "20:00",
+      "number": "1234567891",
+      "age": "21",
+      "address": "navi mumbai",
       "injury": "accident",
       "id": 1
-    },
+    }
+  ],
+  "patients": [
     {
-      "image": "http://localhost:4200/assets/Profile-Pic-4.png",
+      "image": "../../../assets/profile.png",
       "name": "piyush",
-      "doctorname": "Dr. Lisa Chavez",
+      "doctorname": "Dr. Austin Distel",
       "email": "piyush@gmail.in",
-      "date": "2023-04-04",
-      "startTime": "16:48",
-      "endTime": "18:50",
-      "number": "1231231414",
-      "age": "42",
-      "address": "asnfiasnjiasfa",
-      "injury": "heart attack",
-      "id": 2
+      "date": "2023-04-21",
+      "startTime": "14:20",
+      "endTime": "14:20",
+      "number": "9876543219",
+      "age": "34",
+      "address": "navi mumbai",
+      "injury": "headache",
+      "id": 1
     }
   ]
 }

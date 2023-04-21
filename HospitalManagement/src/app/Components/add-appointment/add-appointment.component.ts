@@ -68,8 +68,14 @@ export class AddAppointmentComponent implements OnInit {
       address: this.appointmentForm.value.address,
       injury: this.appointmentForm.value.injury
     }
+
+    this.userService.AddPatient(result).subscribe((response: any) => {
+      console.log(response);
+    });
+
     this.userService.AddAppointment(result).subscribe((response: any) => {
       console.log(response);
+      
 
       this.snackbar.open('Appointment added successfully', 'Dismiss', {
         duration: 3000,

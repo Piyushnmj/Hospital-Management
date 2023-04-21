@@ -4,7 +4,7 @@
             Add appointment
         </div>
         <div class="user-profile-pic">
-            <img src="{{profilepic}}" alt="profile" formControlName="image">
+            <img src="{{profilepic}}" alt="profile">
             <button mat-button [matMenuTriggerFor]="menu">
                 Select image
                 <img src="../../../assets/user.png" alt="icon">
@@ -38,7 +38,7 @@
         </div>
         <form [formGroup]="appointmentForm">
             <input type="text" placeholder="Name" value="{{name}}" required>
-            <input type="text" placeholder="Doctor" value="{{doctorname}}" required>
+            <input type="text" placeholder="Doctor" value="{{doctorname}}" required disabled>
             <input type="text" placeholder="Email" value="{{email}}" required>
             <input type="date" placeholder="Date" formControlName="date" required>
             <div class="from-to">

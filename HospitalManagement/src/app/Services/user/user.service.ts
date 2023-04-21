@@ -28,4 +28,16 @@ export class UserService {
   GetAppointmentList(){
     return this.httpService.GetService(this.url + 'appointments')
   }
+
+  DeleteAppointment(id:any){
+    return this.httpService.DeleteService(this.url + 'appointments/' + id)
+  }
+
+  AddPatient(result: any){
+    return this.httpService.PostService(this.url + 'patients', result)
+  }
+
+  GetPatientList(){
+    return this.httpService.GetService(this.url + 'patients')
+  }
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MatSnackBar } from '@angular/material/snack-bar';
 import { Sort } from '@angular/material/sort';
 import { UserService } from 'src/app/Services/user/user.service';
 
@@ -11,7 +12,8 @@ import { UserService } from 'src/app/Services/user/user.service';
 export class AppointmentsComponent implements OnInit {
   displayedColumns: string[] = ['photo', 'name', 'email', 'date', 'time', 'number', 'doctor', 'injury', 'actions'];
   dataSource: any;
-  constructor(private userService: UserService) { }
+  id: any;
+  constructor(private userService: UserService, private snackbar: MatSnackBar) { }
 
   ngOnInit(): void {
     this.userService.GetAppointmentList().subscribe((response: any) => {
@@ -40,6 +42,26 @@ export class AppointmentsComponent implements OnInit {
           return 0;
       }
     })
+  }
+
+  delete(id:any) {
+    console.log(id);
+    
+    this.userService.DeleteAppointment(id).subscribe((result) => {
+      console.log(result);
+      this.snackbar.open('Appointment deleted successfully', 'Dismiss', {
+        duration: 3000,
+        verticalPosition: 'bottom',
+        horizontalPosition: 'center'
+      })
+    }, error => {
+      this.snackbar.open('Something went wrong', 'Dismiss', {
+        duration: 3000,
+        verticalPosition: 'bottom',
+        horizontalPosition: 'center'
+      })
+    }
+    )
   }
 }
 
