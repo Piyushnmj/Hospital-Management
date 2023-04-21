@@ -13,13 +13,27 @@ export class AppointmentsComponent implements OnInit {
   displayedColumns: string[] = ['photo', 'name', 'email', 'date', 'time', 'number', 'doctor', 'injury', 'actions'];
   dataSource: any;
   id: any;
+  accountData: any;
   constructor(private userService: UserService, private snackbar: MatSnackBar) { }
 
   ngOnInit(): void {
+
+    this.id = localStorage.getItem('id');
+
+    this.userService.GetUserDetails(this.id).subscribe((detail)=>{
+      console.log(detail);
+      this.accountData = detail;
+    })
+
     this.userService.GetAppointmentList().subscribe((response: any) => {
       console.log(response);
-      this.dataSource = response;
+      this.dataSource = response.filter((f:any)=>{
+        return f.email == this.accountData.email
+      }
+      );
     })
+
+    
   }
 
   sortData(sort: Sort) {

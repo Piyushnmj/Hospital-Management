@@ -2,39 +2,27 @@
   "users": [
     {
       "name": "Arun Ashish",
-      "email": "piyush@gmail.com",
-      "password": "piyush123",
+      "email": "arun@gmail.com",
+      "password": "arun123",
       "id": 1
     },
     {
-      "name": "hasjfafb",
-      "email": "ahsfhaskf",
-      "password": "jansfjkajksf",
-      "id": 2
-    },
-    {
       "name": "Praveen",
-      "email": "piyush@gmail.com",
-      "password": "piyush123",
-      "id": 3
+      "email": "praveen@gmail.com",
+      "password": "praveen123",
+      "id": 2
     },
     {
       "name": "piyush",
       "email": "piyush@gmail.in",
       "password": "piyush123",
-      "id": 4
-    },
-    {
-      "name": "arunashish",
-      "email": "arun.ashish@gmail.com",
-      "password": "ashish123",
-      "id": 5
+      "id": 3
     },
     {
       "name": "Saurabh Rajankar",
       "email": "saurabh@gmail.com",
       "password": "saurabh123",
-      "id": 6
+      "id": 4
     }
   ],
   "doctors": [
@@ -42,36 +30,48 @@
       "doctorimage": "../../../assets/aaron-keener.jpg",
       "name": "Dr. Aaron Keener",
       "profession": "Surgeon",
+      "email": "aaronk@gmail.com",
+      "password": "aaron123",
       "id": 1
     },
     {
       "doctorimage": "../../../assets/austin-distel.jpg",
       "name": "Dr. Austin Distel",
       "profession": "Dentist",
+      "email": "austind@gmail.com",
+      "password": "austin123",
       "id": 2
     },
     {
       "doctorimage": "../../../assets/lisa-chavez.jpg",
       "name": "Dr. Lisa Chavez",
       "profession": "Gynaecologist",
+      "email": "lizac@gmail.com",
+      "password": "liza123",
       "id": 3
     },
     {
       "doctorimage": "../../../assets/usman-yousaf.jpg",
       "name": "Dr. Usman Yousaf",
       "profession": "Cardiologist",
+      "email": "usmany@gmail.com",
+      "password": "usman123",
       "id": 4
     },
     {
       "doctorimage": "../../../assets/kevin-hart.jpg",
       "name": "Dr. Kevin Hart",
       "profession": "Pathologist",
+      "email": "kevinh@gmail.com",
+      "password": "kevin123",
       "id": 5
     },
     {
       "doctorimage": "../../../assets/santosh-daruwala.jpg",
       "name": "Dr. Santosh Daruwala",
       "profession": "General practitioner",
+      "email": "santoshd@gmail.com",
+      "password": "santosh123",
       "id": 6
     }
   ],
@@ -89,6 +89,20 @@
       "address": "navi mumbai",
       "injury": "accident",
       "id": 1
+    },
+    {
+      "image": "../../../assets/profile.png",
+      "name": "Arun Ashish",
+      "doctorname": "Dr. Santosh Daruwala",
+      "email": "arun@gmail.com",
+      "date": "2023-04-21",
+      "startTime": "15:00",
+      "endTime": "16:00",
+      "number": "9898767654",
+      "age": "23",
+      "address": "Nerul, Navi Mumbai",
+      "injury": "Twisted ankle",
+      "id": 2
     }
   ],
   "patients": [
@@ -105,6 +119,20 @@
       "address": "navi mumbai",
       "injury": "headache",
       "id": 1
+    },
+    {
+      "image": "../../../assets/profile.png",
+      "name": "Arun Ashish",
+      "doctorname": "Dr. Santosh Daruwala",
+      "email": "arun@gmail.com",
+      "date": "2023-04-21",
+      "startTime": "15:00",
+      "endTime": "16:00",
+      "number": "9898767654",
+      "age": "23",
+      "address": "Nerul, Navi Mumbai",
+      "injury": "Twisted ankle",
+      "id": 2
     }
   ]
 }
