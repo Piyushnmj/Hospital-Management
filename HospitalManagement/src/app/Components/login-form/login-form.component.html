@@ -11,6 +11,7 @@
                 <input type="text" placeholder="Login" formControlName="login">
                 <input type="password" placeholder="Password" formControlName="password">
                 <mat-slide-toggle color="primary" class="toggle-switch">Remember me</mat-slide-toggle>
+                <mat-checkbox class="checkbox" color="primary" [checked]="isDoctor">Are you a Doctor?</mat-checkbox>
                 <div class="loginbtn">
                     <button>
                         <img src="../../../assets/login.png">

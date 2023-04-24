@@ -30,6 +30,11 @@ mat-card {
     color: #98A8C5;
 }
 
+form{
+    display: flex;
+    flex-direction: column;
+}
+
 input {
     margin-top: 20px;
     height: 38px;
@@ -52,6 +57,12 @@ input:focus-within {
 
 .toggle-switch {
     margin-top: 20px;
+    font-size: 13px;
+}
+
+.checkbox{
+    margin-top: 10px;
+    margin-left: 5px;
     font-size: 13px;
 }
 
@@ -78,7 +89,7 @@ img {
 }
 
 .forgotpass {
-    margin-top: 40px;
+    margin-top: 30px;
 }
 
 a {

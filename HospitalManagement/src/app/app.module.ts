@@ -25,6 +25,8 @@ import { PatientsComponent } from './Components/patients/patients.component';
 import { MatSortModule } from '@angular/material/sort';
 import { MatTableModule } from '@angular/material/table';
 import { AuthguardService } from './Services/authguard/authguard.service';
+import {MatCheckboxModule} from '@angular/material/checkbox';
+import { FilterPipe } from './pipes/filter.pipe';
 
 @NgModule({
   declarations: [
@@ -35,7 +37,8 @@ import { AuthguardService } from './Services/authguard/authguard.service';
     DashboardComponent,
     DoctorsDashboardComponent,
     AppointmentsComponent,
-    PatientsComponent
+    PatientsComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
@@ -55,7 +58,8 @@ import { AuthguardService } from './Services/authguard/authguard.service';
     MatSidenavModule,
     MatListModule,
     MatSortModule,
-    MatTableModule
+    MatTableModule,
+    MatCheckboxModule
   ],
   providers: [AuthguardService],
   bootstrap: [AppComponent]

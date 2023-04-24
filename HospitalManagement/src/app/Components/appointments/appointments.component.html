@@ -3,7 +3,7 @@
 </header>
 <div class="main-container">
     <div class="table-container">
-        <table mat-table [dataSource]="dataSource" matSort (matSortChange)="sortData($event)">
+        <table mat-table [dataSource]="dataSource | FilterData : find" matSort (matSortChange)="sortData($event)">
 
             <ng-container matColumnDef="photo">
                 <th mat-header-cell *matHeaderCellDef class="photo"> Photo </th>

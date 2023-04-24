@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Sort } from '@angular/material/sort';
+import { DataServiceService } from 'src/app/Services/dataService/data-service.service';
 import { UserService } from 'src/app/Services/user/user.service';
 
 @Component({
@@ -14,7 +15,8 @@ export class AppointmentsComponent implements OnInit {
   dataSource: any;
   id: any;
   accountData: any;
-  constructor(private userService: UserService, private snackbar: MatSnackBar) { }
+  find: any;
+  constructor(private userService: UserService, private snackbar: MatSnackBar, private dataService: DataServiceService) { }
 
   ngOnInit(): void {
 
@@ -33,6 +35,10 @@ export class AppointmentsComponent implements OnInit {
       );
     })
 
+    this.dataService.incomingMessage.subscribe((list)=>{
+      console.log('Searching',list);
+      this.find = list;
+    })
     
   }
 

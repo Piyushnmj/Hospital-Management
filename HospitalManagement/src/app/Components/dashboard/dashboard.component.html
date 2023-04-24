@@ -2,7 +2,7 @@
   <mat-toolbar class="toolbar">
     <button mat-icon-button (click)="snav.toggle()"><img src="../../../assets/menu.png" alt="menu"></button>
     <div class="searchbar">
-      <input type="text" placeholder="Type to search">
+      <input type="text" placeholder="Type to search" (keyup)="search($event)">
       <img src="../../../assets/search.png" alt="search">
     </div>
     <div class="right-btns">

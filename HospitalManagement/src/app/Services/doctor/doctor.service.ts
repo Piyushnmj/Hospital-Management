@@ -5,10 +5,10 @@ import { HttpService } from '../http/http.service';
   providedIn: 'root'
 })
 export class DoctorService {
-  url = 'http://localhost:3000/';
+  url = 'http://localhost:3000/doctors';
   constructor(private httpService: HttpService) { }
-
+  
   doctorList(){
-    return this.httpService.GetService(this.url + 'doctors')
+    return this.httpService.GetService(this.url)
   }
 }
